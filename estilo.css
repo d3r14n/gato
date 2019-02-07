@@ -1,0 +1,219 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+html
+{
+	overflow: hidden;
+}
+
+body
+{
+	height: 100%;
+	width: 100%;
+}
+
+h1
+{
+	text-orientation: center;
+	height: 20%;
+	width: 100%;
+	float: left;
+	position: relative;
+	padding-left: 35%;
+	padding-top: 2%;
+	padding-right: 10%;
+	margin-bottom: 3%;
+	font-size: 3em;
+}
+
+button:focus, select:focus
+{
+	outline:0;
+}
+
+/*JUEGO*/
+
+#game
+{
+	height:100%;
+	width: 90%;
+	position: relative;
+	float: left;
+	left: 5%;
+	background: black;
+}
+
+.casilla
+{
+	width: 32.291%;
+	height: 125px;
+	position: relative;
+	margin: 5px;
+	font-size: 5em;
+	color: transparent;
+}
+
+#cargando
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 1;
+	display: none;
+}
+
+/*DIFICULTAD Y REINICIO*/
+
+#dificultad
+{
+	width: 15%;
+	height: 10%;
+	position: relative;
+	margin: 0;
+	font-size: 1.5em;
+	color: black;
+	left: 25%;
+	text-align: right;
+	margin-top: 3%;
+	border: 3px solid black;
+	box-shadow: 10px 5px rgba(0, 0, 0, 0.8);
+}
+
+#btnReinicio
+{
+	width: 30%;
+	height: 10%;
+	position: relative;
+	margin: 0;
+	font-size: 2em;
+	color: rgba(0, 0, 0, 0.9);
+	left: 30%;
+	text-align: center;
+	margin-top: 3%;
+	border: 3px solid black;
+	box-shadow: 10px 5px rgba(0, 0, 0, 0.8);
+}
+
+#btnReinicio:hover
+{
+	font-size: 2.1em;
+	color: black;
+	box-shadow: 6px 3px rgba(0, 0, 0, 0.6);
+}
+
+/*TEMAS*/
+
+#temas
+{
+	height: 50%;
+	width: 20%;
+	position: absolute;
+	left: 40%;
+	top: 15%;
+	z-index: 2;
+	background: rgba(255, 255, 255, 0.8);
+	display: none;
+}
+
+#btnTemas
+{
+	width: 20%;
+	height: 10%;
+	position: absolute;
+	font-size: 1.5em;
+	color: rgba(0, 0, 0, 0.9);
+	right: 5%;
+	top: 5%;
+	text-align: center;
+	border: 3px solid black;
+	box-shadow: 10px 5px rgba(0, 0, 0, 0.8);
+}
+
+#btnTemas:hover
+{
+	font-size: 1.6em;
+	color: black;
+	box-shadow: 6px 3px rgba(0, 0, 0, 0.6);
+}
+
+.btnTema
+{
+	width: 20%;
+	height: 10%;
+	position: relative;
+	margin: 4%;
+	font-size: 0.9em;
+	color: black;
+	text-align: center;
+	font-weight: bolder;
+	border: 1px solid black;
+	box-shadow: 5px 2px rgba(0, 0, 0, 0.8);
+}
+
+#cerrar
+{
+	width: 8%;
+	height: 8%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: red;
+	font-size: 1em;
+	text-align: center;
+}
+
+/*COLORES*/
+
+.bgGrey
+{
+	background: #828282;
+}
+
+.grGrey
+{
+	background: linear-gradient(#3A3939, #828282);
+}
+
+.bgBlue
+{
+	background: #5A7AC9;
+}
+
+.grBlue
+{
+	background: linear-gradient(#00112F, #5A7AC9);
+}
+
+.bgRed
+{
+	background: #E50005;
+}
+
+.grRed
+{
+	background: linear-gradient(#621618, #E50005);
+}
+
+/*NOTIFICACIONES*/
+
+#notificacion
+{
+	top: -10%;
+	width: 40%;
+	height: 10%;
+	left: 30%;
+	position: absolute;
+	z-index: 2;
+	transition: top 1s;
+}
+
+#notificacion>p{
+	font-size:2em;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 2%;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>#</title>
+		<script type="text/javascript" src="eventos.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body id="body" onload="seleccionarTema()">
+		<h1 id="titulo">Gato - Tic Tac Toe</h1>
+		<div id="cargando"></div>
+		<div id="notificacion"></div>
+		<div id="temas">
+			<button id="cerrar" onclick="cerrarTemas()">x</button>
+			<button class="btnTema grBlue" onclick="seleccionarTema('blue')">Azul</button>
+			<button class="btnTema grRed" onclick="seleccionarTema('red')">Rojo</button>
+			<button class="btnTema grGrey" onclick="seleccionarTema('grey')">Gris</button>
+		</div>
+		<button id="btnTemas" onclick="mostrarTemas()">Seleccionar Tema</button>
+		<div id="game">
+			<button id="casillaSI" onmouseover="style.color='rgba(0,0,255,0.4)'" onmouseout="style.color='transparent'" class="casilla" onclick="seleccionarCasilla(this)">X</button>
+			<button id="casillaSC" onmouseover="style.color='rgba(0,0,255,0.4)'" onmouseout="style.color='transparent'" class="casilla" onclick="seleccionarCasilla(this)">X</button>
+			<button id="casillaSD" onmouseover="style.color='rgba(0,0,255,0.4)'" onmouseout="style.color='transparent'" class="casilla" onclick="seleccionarCasilla(this)">X</button>
+			<button id="casillaCI" onmouseover="style.color='rgba(0,0,255,0.4)'" onmouseout="style.color='transparent'" class="casilla" onclick="seleccionarCasilla(this)">X</button>
+			<button id="casillaCC" onmouseover="style.color='rgba(0,0,255,0.4)'" onmouseout="style.color='transparent'" class="casilla" onclick="seleccionarCasilla(this)">X</button>
+			<button id="casillaCD" onmouseover="style.color='rgba(0,0,255,0.4)'" onmouseout="style.color='transparent'" class="casilla" onclick="seleccionarCasilla(this)">X</button>
+			<button id="casillaII" onmouseover="style.color='rgba(0,0,255,0.4)'" onmouseout="style.color='transparent'" class="casilla" onclick="seleccionarCasilla(this)">X</button>
+			<button id="casillaIC" onmouseover="style.color='rgba(0,0,255,0.4)'" onmouseout="style.color='transparent'" class="casilla" onclick="seleccionarCasilla(this)">X</button>
+			<button id="casillaID" onmouseover="style.color='rgba(0,0,255,0.4)'" onmouseout="style.color='transparent'" class="casilla" onclick="seleccionarCasilla(this)">X</button>
+		</div>
+		<select id="dificultad">
+			<option value="easy" selected>Fácil</option>
+			<option value="medium">Medio</option>
+			<option value="hard">Difícil</option>
+			<option value="impossible">Imposible</option>
+		</select>
+		<button id="btnReinicio" onclick="reiniciar()">Reiniciar Juego</button>
+	</body>
+</html>
